@@ -1,7 +1,7 @@
 1. Directive <br>
-    1.1 @page <br>
-    1.2 @include <br>
-    1.3 @taglib <br>    <%--Eg will get back soon--%>
+1.1 @page <br>
+1.2 @include <br>
+1.3 @taglib <br>    <%--Eg will get back soon--%>
 2. Declaration <br>
 3. Scriptlet <br>
 4. Expression <br>
@@ -10,7 +10,8 @@
 <%@ page import="java.util.*" %>
 
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-
+<%--Error Handling--%>
+<%@ page errorPage="error.jsp" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,16 +36,15 @@
 <%
     out.println(3 + 5);
     // Eg will get back soon
-    pageContext.setAttribute("name", "dev43",PageContext.SESSION_SCOPE);
+    pageContext.setAttribute("name", "dev43", PageContext.SESSION_SCOPE);
 %>
 <br>
 
 <%-- 4) print var without creating an obj--%>
 PI value is :
-<%=
-pi
-%>
+<%= pi %>
 
+<% int i = 9/0; %>
 
 <%@ include file="footer.jsp" %>
 
