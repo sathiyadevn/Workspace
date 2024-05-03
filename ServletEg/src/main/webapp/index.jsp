@@ -1,4 +1,4 @@
-1. Directive <br>
+        1. Directive <br>
 1.1 @page <br>
 1.2 @include <br>
 1.3 @taglib <br>    <%--Eg will get back soon--%>
@@ -6,8 +6,8 @@
 3. Scriptlet <br>
 4. Expression <br>
 
-<%-- 1.1) Import stats goes here--%>
-<%@ page import="java.util.*" %>
+<%-- 1.1) Import stats goes here(can import multiple pakages)--%>
+<%@ page import="java.util.*,java.sql.*" %>
 
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%--Error Handling--%>
@@ -21,7 +21,7 @@
 <%-- 1.2) --%>
 <%@ include file="header.jsp" %>
 
-<h1><%= "Hello World!" %>
+<h1><%="Hello World!"%>
 </h1>
 <br/>
 <a href="hello-servlet">Hello Servlet</a> </br>
@@ -29,7 +29,6 @@
 <%-- 2) Instance Var goes here--%>
 <%!
     double pi = 3.14;
-
 %>
 
 <%-- 3) Internall these logic goes into service()/doGet()/doPost() in Servlet --%>
@@ -42,9 +41,33 @@
 
 <%-- 4) print var without creating an obj--%>
 PI value is :
-<%= pi %>
+<%=pi%>
+<%--Error Handling - unCmd below and it --%>
+<%--    <% int i = 9 / 0; %>--%>
 
-<% int i = 9/0; %>
+<%--JDBC--%>
+<%! ResultSet rs = null; %>
+<%
+    try {
+        String url = "jdbc:mysql://localhost:3306/demo";
+        String user = "root";
+        String pass = "root";
+        String query = "select * from newConn where no=1";
+
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        Connection con = DriverManager.getConnection(url, user, pass);
+        Statement st = con.createStatement();
+
+        rs = st.executeQuery(query);
+        rs.next();
+    } catch (Exception e) {
+    }
+
+%>
+<br> <br>
+DATA from MYSQL <br>
+RollNo : <%=rs.getString(1)%> <br>
+Name : <%=rs.getString(2)%> <br>
 
 <%@ include file="footer.jsp" %>
 
