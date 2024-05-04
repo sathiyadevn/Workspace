@@ -62,10 +62,10 @@ PI value is :
         rs.next();
     } catch (Exception e) {
     }
-
 %>
 <br> <br>
 DATA from MYSQL <br>
+
 RollNo : <%=rs.getString(1)%> <br>
 Name : <%=rs.getString(2)%> <br>
 
