@@ -13,9 +13,10 @@ import java.io.IOException;
 public class JstlServlet extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String name = "dev43";
+        Student stu = new Student(1, "dev43");
 
-        request.setAttribute("label", name);
+        // Set the attribute in the session scope
+        request.setAttribute("student", stu);
         RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
         rd.forward(request, response);
     }
