@@ -10,6 +10,11 @@
     if(session.getAttribute("userName")==null)
         response.sendRedirect("loginPage.jsp");
 %>
-    Welcome ${userName}
+Welcome ${userName}
+
+<a href="videoPage.jsp">Your Video Here</a>
+
+
+
 </body>
 </html>
