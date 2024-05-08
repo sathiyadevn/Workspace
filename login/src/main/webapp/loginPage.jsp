@@ -5,9 +5,9 @@
     <title>Login Page</title>
 </head>
 <body>
-    <form action="Login">
+    <form action="Login" method="post">
         Enter your name : <input type="text" name="uname"> <br>
-        Enter your password : <input type="text" name="pass"> <br>
+        Enter your password : <input type="password" name="pass"> <br>
         <input type="submit" value="login">
     </form>
 </body>

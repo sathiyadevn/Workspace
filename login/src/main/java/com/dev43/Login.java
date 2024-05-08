@@ -10,13 +10,13 @@ import java.io.IOException;
 
 @WebServlet("/Login")
 public class Login extends HttpServlet {
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String name=request.getParameter("uname");
         String pass=request.getParameter("pass");
         if(name.equals("dev43")&& pass.equals("peace")) {
 
-            HttpSession session=request.getSession();
-            session.setAttribute("userName",name);
+            HttpSession session=request.getSession();       // without session, we can access welcomePage.jsp page if we knew the page name
+            session.setAttribute("userName",name);      // by session,we cant access other pages without login cant use this links on other browsers as well
             response.sendRedirect("welcomePage.jsp");
         }
         else
