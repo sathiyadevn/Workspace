@@ -14,7 +14,9 @@ Welcome ${userName}
 
 <a href="videoPage.jsp">Your Video Here</a>
 
-
+<form action="Logout">
+    <input type="submit" value="logout">
+</form>
 
 </body>
 </html>
