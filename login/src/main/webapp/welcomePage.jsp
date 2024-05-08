@@ -5,6 +5,11 @@
     <title>Welcome Page</title>
 </head>
 <body>
-    Welcome Buddy!
+
+<%
+    if(session.getAttribute("userName")==null)
+        response.sendRedirect("loginPage.jsp");
+%>
+    Welcome ${userName}
 </body>
 </html>
