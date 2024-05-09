@@ -11,22 +11,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d90f9acf-ec40-4b81-806f-7712140a9141" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dev43/userdetails/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dev43/userdetails/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dev43/userdetails/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/showUser.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FilterServlet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FilterServlet/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ServletEg/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ServletEg/.idea/.gitignore" beforeDir="false" />
@@ -46,6 +30,28 @@
       <change beforePath="$PROJECT_DIR$/../ServletEg/src/main/webapp/footer.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ServletEg/src/main/webapp/header.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ServletEg/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletJspJdbcDemo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletJspJdbcDemo/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletJspJdbcDemo/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletJspJdbcDemo/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletJspJdbcDemo/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletJspJdbcDemo/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletJspJdbcDemo/src/main/java/com/dev43/webApp/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletJspJdbcDemo/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletJspJdbcDemo/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dev43/userdetails/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dev43/userdetails/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/showUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/showUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/com/dev43/demo/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/webapp/index.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,7 +234,7 @@
       <option name="presentableId" value="Default" />
       <updated>1715241492765</updated>
       <workItem from="1715241493472" duration="1365000" />
-      <workItem from="1715244488441" duration="9079000" />
+      <workItem from="1715244488441" duration="10104000" />
     </task>
     <servers />
   </component>

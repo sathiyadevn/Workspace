@@ -6,6 +6,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 
@@ -17,10 +18,14 @@ public class UserController extends HttpServlet {
         UserDao dao = new UserDao();
         User user = dao.getUser(uid);
 
-        request.setAttribute("userObj",user );
+//        request.setAttribute("userObj",user );
+//        RequestDispatcher rd = request.getRequestDispatcher("showUser.jsp");
+//        rd.forward(request, response);
 
-        RequestDispatcher rd = request.getRequestDispatcher("showUser.jsp");
-        rd.forward(request, response);
+        HttpSession session=request.getSession();
+        session.setAttribute("userObj",user );
+
+        response.sendRedirect("showUser.jsp");
 
 
     }

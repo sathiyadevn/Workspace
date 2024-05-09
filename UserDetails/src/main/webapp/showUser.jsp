@@ -12,7 +12,7 @@
 </head>
 <body bgcolor="#008b8b">
     <%
-        User user= (User) request.getAttribute("userObj");
+        User user= (User) session.getAttribute("userObj");
         out.println(user);
 
     %>
