@@ -7,10 +7,16 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+//        System.out.println( "Hello World!" );
 
         ApplicationContext factory=new ClassPathXmlApplicationContext("spring.xml");
         User user= (User) factory.getBean("user");
         user.code();
+        user.age=20;
+        System.out.println(user.age);       // 20
+
+        // Singleton -> Spring Container gives you the same obj for all .getbean() call
+        User user1= (User) factory.getBean("user");
+        System.out.println(user1.age);      // 20
     }
 }
