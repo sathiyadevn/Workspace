@@ -4,10 +4,14 @@ public class User {
     private int age;
     private  Laptop laptop;
 
+    public User(int age, Laptop laptop) {
+        this.age = age;
+        this.laptop = laptop;
+    }
+
     public void code() {
         System.out.println("Coding...");
         laptop.compile();
-
     }
 
     public Laptop getLaptop() {
@@ -18,9 +22,9 @@ public class User {
         this.laptop = laptop;
     }
 
-    public User() {
-        System.out.println("Im User");
-    }
+//    public User() {
+//        System.out.println("Im User");
+//    }
 
     public int getAge() {
         return age;

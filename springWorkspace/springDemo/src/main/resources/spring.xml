@@ -2,9 +2,13 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
     <bean id="user" class="com.dev43.spring.User">
-        <property name="age" value="10"> </property>
-        <property name="laptop" ref="lap"> </property>
+<!--        <property name="age" value="10"> </property>-->
+<!--        <property name="laptop" ref="lap"> </property>-->
+        <constructor-arg value="12"> </constructor-arg>
+        <constructor-arg ref="lap"> </constructor-arg>
+
     </bean>
 
     <bean id="lap" class="com.dev43.spring.Laptop"> </bean>
