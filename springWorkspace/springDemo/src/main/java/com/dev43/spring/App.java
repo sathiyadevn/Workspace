@@ -12,6 +12,8 @@ public class App
         User user= (User) factory.getBean("user");
         System.out.println(user.getAge());
 
+        user.code();
+
 
     }
 }

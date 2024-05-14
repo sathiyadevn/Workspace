@@ -4,5 +4,8 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="user" class="com.dev43.spring.User">
         <property name="age" value="10"> </property>
+        <property name="laptop" ref="lap"> </property>
     </bean>
+
+    <bean id="lap" class="com.dev43.spring.Laptop"> </bean>
 </beans>
