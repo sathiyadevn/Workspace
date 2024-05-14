@@ -3,15 +3,16 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="user" class="com.dev43.spring.User" autowire="byName">
+    <bean id="user" class="com.dev43.spring.User" autowire="byType">
         <property name="age" value="10"> </property>
 
 <!--        Laptop, Desktop Implements -> Computer -> call by its name -> com -->
 <!--        <property name="com" ref="com"> </property>-->
     </bean>
 
+<!--    byType -> get confused by calling laptop or desktop -> primary -->
     <bean id="com" class="com.dev43.spring.Laptop"> </bean>
-    <bean id="desktop" class="com.dev43.spring.Desktop"> </bean>
+    <bean id="desktop" class="com.dev43.spring.Desktop" primary="true"> </bean>
 
 
 </beans>
