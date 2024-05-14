@@ -2,25 +2,26 @@ package com.dev43.spring;
 
 public class User {
     private int age;
-    private  Laptop laptop;
-
-    public User(int age, Laptop laptop) {
-        this.age = age;
-        this.laptop = laptop;
-    }
+    private Computer com;
 
     public void code() {
         System.out.println("Coding...");
-        laptop.compile();
+        com.compile();
     }
 
-    public Laptop getLaptop() {
-        return laptop;
+    public Computer getCom() {
+        return com;
     }
 
-    public void setLaptop(Laptop laptop) {
-        this.laptop = laptop;
+    public void setCom(Computer com) {
+        this.com = com;
     }
+
+
+//    public User(int age, Laptop laptop) {
+//        this.age = age;
+//        this.laptop = laptop;
+//    }
 
 //    public User() {
 //        System.out.println("Im User");
