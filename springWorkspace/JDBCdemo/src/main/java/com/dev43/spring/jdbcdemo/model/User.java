@@ -1,4 +1,4 @@
-package com.dev43.spring.jdbcdemo.mdoel;
+package com.dev43.spring.jdbcdemo.model;
 
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;

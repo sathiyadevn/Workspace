@@ -1,6 +1,6 @@
 package com.dev43.spring.jdbcdemo;
 
-import com.dev43.spring.jdbcdemo.mdoel.User;
+import com.dev43.spring.jdbcdemo.model.User;
 import com.dev43.spring.jdbcdemo.repo.UserRepo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,7 +14,7 @@ public class JdbCdemoApplication {
         ApplicationContext context=SpringApplication.run(JdbCdemoApplication.class, args);
 
         User user=context.getBean(User.class);
-        user.setId(101);
+        user.setId(1);
         user.setName("Dev43");
         user.setTech("Java");
 
@@ -22,7 +22,6 @@ public class JdbCdemoApplication {
         repo.save(user);
 
         System.out.println(repo.findAll());
-
 
     }
 
