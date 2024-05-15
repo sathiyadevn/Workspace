@@ -1,6 +1,7 @@
 package com.dev43.spring.springmvcdemo;
 
 import com.dev43.spring.springmvcdemo.model.User;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,6 +16,9 @@ import java.util.List;
 @Controller
 public class HomeController {
 
+    @Autowired
+    UserRepo repo;
+
     @ModelAttribute
     public void modelData(Model m) {
         m.addAttribute("name", "Developer");
@@ -27,8 +31,8 @@ public class HomeController {
     }
     @GetMapping("getUsers")
     public String getUser(Model m){
-        List<User> users= Arrays.asList(new User(101,"java"),new User(102,"python"));
-        m.addAttribute("getUsers",users);
+
+        m.addAttribute("getUsers",repo.findAll());
         return "showUsers";
     }
 
