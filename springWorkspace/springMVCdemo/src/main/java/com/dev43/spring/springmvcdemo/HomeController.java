@@ -3,12 +3,19 @@ package com.dev43.spring.springmvcdemo;
 import com.dev43.spring.springmvcdemo.model.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class HomeController {
+
+    @ModelAttribute
+    public void modelData(Model m){
+        m.addAttribute("name","Developer");
+    }
+
     @RequestMapping("/")
     public String home(){
         return "index";
@@ -22,12 +29,12 @@ public class HomeController {
     }
 
     @RequestMapping("addUser")
-    public String addUser(@RequestParam("id")int id,@RequestParam("name")String name,Model m){
-        User user=new User();
-        user.setId(id);
-        user.setName(name);
+    public String addUser(@ModelAttribute("addUser") User user){
+//        User user=new User();
+//        user.setId(id);
+//        user.setName(name);
 
-        m.addAttribute("addUser",user);
+//        m.addAttribute("addUser",user);
         return "result";
     }
 
