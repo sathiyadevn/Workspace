@@ -42,7 +42,7 @@ public class HomeController {
     @GetMapping("getUserByName")
     public String getUserByName(@RequestParam String name, Model m){
 
-        m.addAttribute("getUser",repo.findByNameOrderByIdDesc(name));
+        m.addAttribute("getUser",repo.find(name));
         return "showUsers";
     }
 
