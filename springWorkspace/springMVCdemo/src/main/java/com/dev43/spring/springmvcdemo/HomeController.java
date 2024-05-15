@@ -39,6 +39,12 @@ public class HomeController {
         m.addAttribute("getUser",repo.getOne(id));
         return "showUsers";
     }
+    @GetMapping("getUserByName")
+    public String getUserByName(@RequestParam String name, Model m){
+
+        m.addAttribute("getUser",repo.findByNameOrderByIdDesc(name));
+        return "showUsers";
+    }
 
     @PostMapping("addUser")
     public String addUser(@ModelAttribute("addUser") User user) {
