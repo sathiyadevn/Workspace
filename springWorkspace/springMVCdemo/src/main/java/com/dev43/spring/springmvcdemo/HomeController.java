@@ -1,6 +1,7 @@
 package com.dev43.spring.springmvcdemo;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
@@ -12,13 +13,11 @@ public class HomeController {
         return "index";
     }
     @RequestMapping("add")
-    public ModelAndView add(@RequestParam("num1") int i, @RequestParam("num2")int j){
-        ModelAndView mv=new ModelAndView();
-        mv.setViewName("result");
+    public String add(@RequestParam("num1") int i, @RequestParam("num2")int j, Model m){
 
         int z=i+j;
-        mv.addObject("addValue",z);
-        return mv;
+        m.addAttribute("addValue",z);
+        return "result";
     }
 
 }
