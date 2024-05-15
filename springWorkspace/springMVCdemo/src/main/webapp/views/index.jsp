@@ -14,7 +14,7 @@
 <%--        <input type="submit">--%>
 <%--    </form>--%>
 
-    <form action="addUser">
+    <form action="addUser" method="post">
         Enter Id <input type="text" name="id">
         Enter Name <input type="text" name="name">
         <input type="submit">
