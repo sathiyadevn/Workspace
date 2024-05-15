@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" isELIgnored="false" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,6 +6,11 @@
     <title>Insert title here</title>
 </head>
 <body>
-User Details : ${getUsers}
+
+User Details : ${getUser}
+
+Users Details : ${getUsers}
+
+
 </body>
 </html>

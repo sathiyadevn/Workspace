@@ -13,6 +13,18 @@
         Enter Name <input type="text" name="name">
         <input type="submit">
     </form>
+<hr>
+    <form action="getUser" method="get">
+        Enter Id <input type="text" name="id">
+        <input type="submit">
+    </form>
+
+
+
+
+
+
+
 
     
 

@@ -4,10 +4,7 @@ import com.dev43.spring.springmvcdemo.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -30,15 +27,22 @@ public class HomeController {
         return "index";
     }
     @GetMapping("getUsers")
-    public String getUser(Model m){
+    public String getUsers(Model m){
 
         m.addAttribute("getUsers",repo.findAll());
         return "showUsers";
     }
 
+    @GetMapping("getUser")
+    public String getUser(@RequestParam int id, Model m){
+
+        m.addAttribute("getUser",repo.getOne(id));
+        return "showUsers";
+    }
+
     @PostMapping("addUser")
     public String addUser(@ModelAttribute("addUser") User user) {
-
+        repo.save(user);
         return "result";
     }
 
