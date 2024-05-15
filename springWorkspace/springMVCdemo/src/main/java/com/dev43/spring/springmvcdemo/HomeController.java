@@ -1,5 +1,6 @@
 package com.dev43.spring.springmvcdemo;
 
+import com.dev43.spring.springmvcdemo.model.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,5 +20,17 @@ public class HomeController {
         m.addAttribute("addValue",z);
         return "result";
     }
+
+    @RequestMapping("addUser")
+    public String addUser(@RequestParam("id")int id,@RequestParam("name")String name,Model m){
+        User user=new User();
+        user.setId(id);
+        user.setName(name);
+
+        m.addAttribute("addUser",user);
+        return "result";
+    }
+
+
 
 }

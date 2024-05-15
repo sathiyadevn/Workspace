@@ -8,5 +8,7 @@
 <body>
 
 Result is : ${addValue}
+
+User Details : ${addUser}
 </body>
 </html>
