@@ -1,0 +1,29 @@
+2024-05-17T12:11:43.601+05:30  INFO 100064 --- [springMVCdemo] [main] c.d.s.s.SpringMvCdemoApplication         : Starting SpringMvCdemoApplication using Java 21.0.3 with PID 100064 (/home/dev43/win10/intellijWorksapce/springWorkspace/springMVCdemo/target/classes started by dev43 in /home/dev43/win10/intellijWorksapce/springWorkspace/springMVCdemo)
+2024-05-17T12:11:43.672+05:30  INFO 100064 --- [springMVCdemo] [main] c.d.s.s.SpringMvCdemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-05-17T12:11:48.290+05:30  INFO 100064 --- [springMVCdemo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-17T12:11:48.808+05:30  INFO 100064 --- [springMVCdemo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 396 ms. Found 1 JPA repository interface.
+2024-05-17T12:11:51.751+05:30  INFO 100064 --- [springMVCdemo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-05-17T12:11:51.787+05:30  INFO 100064 --- [springMVCdemo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-17T12:11:51.789+05:30  INFO 100064 --- [springMVCdemo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-17T12:11:52.200+05:30  INFO 100064 --- [springMVCdemo] [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-05-17T12:11:52.211+05:30  INFO 100064 --- [springMVCdemo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-17T12:11:52.213+05:30  INFO 100064 --- [springMVCdemo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8141 ms
+2024-05-17T12:11:52.682+05:30  INFO 100064 --- [springMVCdemo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-17T12:11:53.747+05:30  INFO 100064 --- [springMVCdemo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@559991f5
+2024-05-17T12:11:53.752+05:30  INFO 100064 --- [springMVCdemo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-17T12:11:53.881+05:30  INFO 100064 --- [springMVCdemo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-17T12:11:54.103+05:30  INFO 100064 --- [springMVCdemo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-17T12:11:54.301+05:30  INFO 100064 --- [springMVCdemo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-17T12:11:55.046+05:30  INFO 100064 --- [springMVCdemo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-17T12:11:55.246+05:30  WARN 100064 --- [springMVCdemo] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-17T12:11:55.250+05:30  WARN 100064 --- [springMVCdemo] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-05-17T12:11:57.691+05:30  INFO 100064 --- [springMVCdemo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-17T12:11:57.701+05:30  INFO 100064 --- [springMVCdemo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-17T12:11:58.287+05:30  INFO 100064 --- [springMVCdemo] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-17T12:11:59.494+05:30  WARN 100064 --- [springMVCdemo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-17T12:11:59.628+05:30  INFO 100064 --- [springMVCdemo] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-17T12:12:01.266+05:30  INFO 100064 --- [springMVCdemo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2024-05-17T12:12:01.292+05:30  INFO 100064 --- [springMVCdemo] [main] c.d.s.s.SpringMvCdemoApplication         : Started SpringMvCdemoApplication in 20.583 seconds (process running for 23.209)
+2024-05-17T12:12:14.979+05:30  INFO 100064 --- [springMVCdemo] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-17T12:12:14.981+05:30  INFO 100064 --- [springMVCdemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-17T12:12:14.987+05:30  INFO 100064 --- [springMVCdemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
