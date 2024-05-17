@@ -27,3 +27,64 @@
 2024-05-17T12:12:14.979+05:30  INFO 100064 --- [springMVCdemo] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2024-05-17T12:12:14.981+05:30  INFO 100064 --- [springMVCdemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2024-05-17T12:12:14.987+05:30  INFO 100064 --- [springMVCdemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-05-17T12:20:45.607+05:30  INFO 100064 --- [springMVCdemo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-17T12:20:45.613+05:30  INFO 100064 --- [springMVCdemo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-17T12:20:45.645+05:30  INFO 100064 --- [springMVCdemo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-17T12:20:58.195+05:30  INFO 104160 --- [springMVCdemo] [main] c.d.s.s.SpringMvCdemoApplication         : Starting SpringMvCdemoApplication using Java 21.0.3 with PID 104160 (/home/dev43/win10/intellijWorksapce/springWorkspace/springMVCdemo/target/classes started by dev43 in /home/dev43/win10/intellijWorksapce/springWorkspace/springMVCdemo)
+2024-05-17T12:20:58.205+05:30  INFO 104160 --- [springMVCdemo] [main] c.d.s.s.SpringMvCdemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-05-17T12:21:00.501+05:30  INFO 104160 --- [springMVCdemo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-17T12:21:00.651+05:30  INFO 104160 --- [springMVCdemo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 129 ms. Found 1 JPA repository interface.
+2024-05-17T12:21:02.811+05:30  INFO 104160 --- [springMVCdemo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-05-17T12:21:02.888+05:30  INFO 104160 --- [springMVCdemo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-17T12:21:02.889+05:30  INFO 104160 --- [springMVCdemo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-17T12:21:03.563+05:30  INFO 104160 --- [springMVCdemo] [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-05-17T12:21:03.604+05:30  INFO 104160 --- [springMVCdemo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-17T12:21:03.605+05:30  INFO 104160 --- [springMVCdemo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5137 ms
+2024-05-17T12:21:04.103+05:30  INFO 104160 --- [springMVCdemo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-17T12:21:05.149+05:30  INFO 104160 --- [springMVCdemo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@629075f4
+2024-05-17T12:21:05.155+05:30  INFO 104160 --- [springMVCdemo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-17T12:21:05.292+05:30  INFO 104160 --- [springMVCdemo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-17T12:21:05.496+05:30  INFO 104160 --- [springMVCdemo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-17T12:21:05.627+05:30  INFO 104160 --- [springMVCdemo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-17T12:21:06.458+05:30  INFO 104160 --- [springMVCdemo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-17T12:21:06.642+05:30  WARN 104160 --- [springMVCdemo] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-17T12:21:06.648+05:30  WARN 104160 --- [springMVCdemo] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-05-17T12:21:08.945+05:30  INFO 104160 --- [springMVCdemo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-17T12:21:08.955+05:30  INFO 104160 --- [springMVCdemo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-17T12:21:09.674+05:30  INFO 104160 --- [springMVCdemo] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-17T12:21:10.934+05:30  WARN 104160 --- [springMVCdemo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-17T12:21:11.022+05:30  INFO 104160 --- [springMVCdemo] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-17T12:21:12.137+05:30  INFO 104160 --- [springMVCdemo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2024-05-17T12:21:12.165+05:30  INFO 104160 --- [springMVCdemo] [main] c.d.s.s.SpringMvCdemoApplication         : Started SpringMvCdemoApplication in 15.786 seconds (process running for 18.711)
+2024-05-17T12:24:04.529+05:30  INFO 104160 --- [springMVCdemo] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-17T12:24:04.531+05:30  INFO 104160 --- [springMVCdemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-17T12:24:04.537+05:30  INFO 104160 --- [springMVCdemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-05-17T12:29:37.464+05:30  INFO 104160 --- [springMVCdemo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-17T12:29:37.469+05:30  INFO 104160 --- [springMVCdemo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-17T12:29:37.486+05:30  INFO 104160 --- [springMVCdemo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-17T12:29:49.524+05:30  INFO 108063 --- [springMVCdemo] [main] c.d.s.s.SpringMvCdemoApplication         : Starting SpringMvCdemoApplication using Java 21.0.3 with PID 108063 (/home/dev43/win10/intellijWorksapce/springWorkspace/springMVCdemo/target/classes started by dev43 in /home/dev43/win10/intellijWorksapce/springWorkspace/springMVCdemo)
+2024-05-17T12:29:49.539+05:30  INFO 108063 --- [springMVCdemo] [main] c.d.s.s.SpringMvCdemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-05-17T12:29:52.539+05:30  INFO 108063 --- [springMVCdemo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-17T12:29:52.697+05:30  INFO 108063 --- [springMVCdemo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 130 ms. Found 1 JPA repository interface.
+2024-05-17T12:29:54.698+05:30  INFO 108063 --- [springMVCdemo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-05-17T12:29:54.734+05:30  INFO 108063 --- [springMVCdemo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-17T12:29:54.737+05:30  INFO 108063 --- [springMVCdemo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-17T12:29:55.276+05:30  INFO 108063 --- [springMVCdemo] [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-05-17T12:29:55.289+05:30  INFO 108063 --- [springMVCdemo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-17T12:29:55.290+05:30  INFO 108063 --- [springMVCdemo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5354 ms
+2024-05-17T12:29:55.730+05:30  INFO 108063 --- [springMVCdemo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-17T12:29:56.846+05:30  INFO 108063 --- [springMVCdemo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@20256a0b
+2024-05-17T12:29:56.854+05:30  INFO 108063 --- [springMVCdemo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-17T12:29:57.002+05:30  INFO 108063 --- [springMVCdemo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-17T12:29:57.269+05:30  INFO 108063 --- [springMVCdemo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-17T12:29:57.400+05:30  INFO 108063 --- [springMVCdemo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-17T12:29:58.277+05:30  INFO 108063 --- [springMVCdemo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-17T12:29:58.448+05:30  WARN 108063 --- [springMVCdemo] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-17T12:29:58.453+05:30  WARN 108063 --- [springMVCdemo] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-05-17T12:30:00.597+05:30  INFO 108063 --- [springMVCdemo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-17T12:30:00.607+05:30  INFO 108063 --- [springMVCdemo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-17T12:30:01.348+05:30  INFO 108063 --- [springMVCdemo] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-17T12:30:02.582+05:30  WARN 108063 --- [springMVCdemo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-17T12:30:02.660+05:30  INFO 108063 --- [springMVCdemo] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-17T12:30:04.387+05:30  INFO 108063 --- [springMVCdemo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2024-05-17T12:30:04.433+05:30  INFO 108063 --- [springMVCdemo] [main] c.d.s.s.SpringMvCdemoApplication         : Started SpringMvCdemoApplication in 17.162 seconds (process running for 19.73)

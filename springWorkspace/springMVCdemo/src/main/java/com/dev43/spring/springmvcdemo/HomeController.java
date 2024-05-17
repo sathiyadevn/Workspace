@@ -23,9 +23,9 @@ public class HomeController {
 
     @RequestMapping("/")
     public String home() {
-
         return "index";
     }
+
     @GetMapping("getUsers")
     public String getUsers(Model m){
 
